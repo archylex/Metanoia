@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 6fdb92cd1cb980b438780398cb3c24f3
+  m_SerializeEntries:
+  - m_GUID: acc277a69178cd649b7533abff7d955b
+    m_Address: HUD
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7b96c778694605c498c003dbb2d4a766
+    m_Address: UnityChan
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8ea56be2cdc0ff140912e90fb3805d8e
+    m_Address: GreenSlime
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 91ceab4010cb9ef4eacd7eb8164ac879
+    m_Address: SpawnPoint
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9b6ea8f9204f1e04b9a03f667cb56b43
+    m_Address: UIRoot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8c883cf69e9300c4aba7ee825056dc07
+    m_Address: Loot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 243b8cc2bd222da4798d0da2506ee68f
+    m_Address: ShopItem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e383db883cde98648be8a71b8cff6395
+    m_Address: iap_icon_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3aba31650fa0f5b448aacdec27447470
+    m_Address: iap_icon_18
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bd2c4bd93aef5c443a92ed0c9e3639e6
+    m_Address: iap_icon_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 513805bdaaa9db04dbfac01e92125ec1, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d09ec25b1f543bb49812fea536489590, type: 2}
+    - {fileID: 11400000, guid: 1752c606b18a3ae40a1212f5e4705373, type: 2}
