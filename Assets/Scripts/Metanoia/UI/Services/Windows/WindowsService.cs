@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.Metanoia.UI.Services.Factory;
-using UnityEngine; 
+﻿using Assets.Scripts.Metanoia.Factory;
 
 namespace Assets.Scripts.Metanoia.UI.Services.Windows
 {

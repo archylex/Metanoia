@@ -8,7 +8,6 @@ using Assets.Scripts.Metanoia.Services.PersistentProgress;
 using Assets.Scripts.Metanoia.Services.Random;
 using Assets.Scripts.Metanoia.Services.SaveLoad;
 using Assets.Scripts.Metanoia.StaticData;
-using Assets.Scripts.Metanoia.UI.Services.Factory;
 using Assets.Scripts.Metanoia.UI.Services.Windows;
 using UnityEngine;
 

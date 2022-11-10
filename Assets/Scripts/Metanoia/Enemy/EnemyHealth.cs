@@ -1,9 +1,5 @@
-﻿using Assets.Scripts.Metanoia.Logic;
+﻿using Assets.Scripts.Metanoia.Components.Health;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts.Metanoia.Enemy
@@ -14,7 +10,7 @@ namespace Assets.Scripts.Metanoia.Enemy
         private EnemyAnimator _animator;
 
         [SerializeField] private float _current;
-        [SerializeField] public float _max;
+        [SerializeField] private float _max;
 
         public event Action HealthChanged;
 

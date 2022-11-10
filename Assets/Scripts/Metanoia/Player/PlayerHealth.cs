@@ -1,5 +1,5 @@
 ﻿using Assets.Scripts.Metanoia.Data;
-using Assets.Scripts.Metanoia.Logic;
+using Assets.Scripts.Metanoia.Components.Health;
 using Assets.Scripts.Metanoia.Services.PersistentProgress;
 using System;
 using UnityEngine;

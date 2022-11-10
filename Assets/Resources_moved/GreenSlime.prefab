@@ -131,7 +131,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3732371593803512095}
   - component: {fileID: 8149526852681215349}
-  - component: {fileID: 3348444321519055923}
   m_Layer: 0
   m_Name: HPBar
   m_TagString: Untagged
@@ -169,19 +168,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3024833877215470106}
   m_CullTransparentMesh: 1
---- !u!114 &3348444321519055923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3024833877215470106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6883f4bea80274e4996a8f1ba8184362, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _imageCurrent: {fileID: 230959311724123622}
 --- !u!1 &3499729884385933447
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,7 +373,6 @@ GameObject:
   - component: {fileID: 9194204480905050496}
   - component: {fileID: 1455520954785087784}
   - component: {fileID: -7268972371572295014}
-  - component: {fileID: 7818251077292512174}
   - component: {fileID: -5609811147026146197}
   - component: {fileID: 919137976856489693}
   - component: {fileID: 5790900566633243459}
@@ -397,6 +382,7 @@ GameObject:
   - component: {fileID: 7301565260505683710}
   - component: {fileID: 3689498104682498603}
   - component: {fileID: 4527595962573915188}
+  - component: {fileID: 928138225637978484}
   m_Layer: 0
   m_Name: GreenSlime
   m_TagString: Enemy
@@ -486,19 +472,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &7818251077292512174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5719830564184345262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35ff8d833f3c8d041a345ef6c51e3c42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hpBar: {fileID: 3348444321519055923}
 --- !u!114 &-5609811147026146197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,6 +602,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b271d9d7b09c31c449506a9dd1b54a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &928138225637978484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5719830564184345262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6883f4bea80274e4996a8f1ba8184362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _imageCurrent: {fileID: 230959311724123622}
 --- !u!1 &7797689523562338842
 GameObject:
   m_ObjectHideFlags: 0

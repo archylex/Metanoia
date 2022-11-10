@@ -8,7 +8,7 @@ using Assets.Scripts.Metanoia.Services.Random;
 using Assets.Scripts.Metanoia.Services.PersistentProgress;
 using Assets.Scripts.Metanoia.UI.Services.Windows;
 using Assets.Scripts.Metanoia.UI.Elements;
-using Assets.Scripts.Metanoia.Logic;
+using Assets.Scripts.Metanoia.Components.Health;
 using Assets.Scripts.Metanoia.Enemy;
 using Assets.Scripts.Metanoia.Components.Enemy;
 using Object = UnityEngine.Object;
@@ -71,8 +71,8 @@ namespace Assets.Scripts.Metanoia.Factory
             IHealth health = monster.GetComponent<IHealth>();
             health.Current = monsterData.Hp;
             health.Max = monsterData.Hp;
-
-            monster.GetComponent<ActorUI>().Construct(health);
+                        
+            monster.GetComponent<HpBar>().Construct(health);
             monster.GetComponent<AgentMoveToPlayer>().Construct(HeroGameObject.transform);
             monster.GetComponent<NavMeshAgent>().speed = monsterData.Speed;
 

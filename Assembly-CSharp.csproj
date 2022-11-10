@@ -75,7 +75,6 @@
     <Compile Include="Assets\Scripts\Metanoia\Services\PersistentProgress\ISavedProgress.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Components\Curtain\LoadingCurtain.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Enemy\LootSpawner.cs" />
-    <Compile Include="Assets\Scripts\Metanoia\UI\Elements\ActorUI.cs" />
     <Compile Include="Assets\Scripts\Metanoia\StaticData\Windows\WindowStaticData.cs" />
     <Compile Include="Assets\Scripts\Metanoia\StaticData\EnemySpawnerData.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Services\IAP\IAPProvider.cs" />
@@ -95,7 +94,6 @@
     <Compile Include="Assets\Scripts\Metanoia\Player\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Enemy\CheckAttackRange.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Data\State.cs" />
-    <Compile Include="Assets\Scripts\Metanoia\UI\Services\Factory\UIFactory.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Animation\AnimatorState.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Data\KillData.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Enemy\EnemyAnimator.cs" />
@@ -109,7 +107,6 @@
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\SplashScreen\Scripts\SplashScreen.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Services\Random\UnityRandomService.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Animation\IAnimationStateReader.cs" />
-    <Compile Include="Assets\Scripts\Metanoia\UI\Services\Factory\IUIFactory.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Enemy\TriggerObserver.cs" />
     <Compile Include="Assets\Scripts\Metanoia\StaticData\Windows\WindowConfig.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Data\WorldData.cs" />
@@ -141,7 +138,7 @@
     <Compile Include="Assets\Scripts\Metanoia\Data\Stats.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Services\Input\StandaloneService.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Game.cs" />
-    <Compile Include="Assets\Scripts\Metanoia\UI\Elements\HpBar.cs" />
+    <Compile Include="Assets\Scripts\Metanoia\Components\Health\HpBar.cs" />
     <Compile Include="Assets\Scripts\Metanoia\UI\Windows\Shop\ShopItemsContainer.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\RandomWind.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Data\LootData.cs" />
@@ -169,7 +166,7 @@
     <Compile Include="Assets\Scripts\Metanoia\Services\PersistentProgress\IPersistentProgressService.cs" />
     <Compile Include="Assets\Scripts\Metanoia\UI\Elements\LootCounter.cs" />
     <Compile Include="Assets\Scripts\Metanoia\StateMachine\BootstrapState.cs" />
-    <Compile Include="Assets\Scripts\Metanoia\Logic\IHealth.cs" />
+    <Compile Include="Assets\Scripts\Metanoia\Components\Health\IHealth.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Enemy\AgentRotateToPlayer.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Enemy\PhysicsDebug.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Services\Input\IInputService.cs" />
@@ -180,6 +177,8 @@
     <Compile Include="Assets\Scripts\Metanoia\Animation\AnimatorStateReporter.cs" />
     <Compile Include="Assets\Scripts\Metanoia\StaticData\MonsterTypeId.cs" />
     <Compile Include="Assets\Scripts\Metanoia\Components\LevelTransfer\LevelTransferTrigger.cs" />
+    <Compile Include="Assets\Scripts\Metanoia\Factory\IUIFactory.cs" />
+    <Compile Include="Assets\Scripts\Metanoia\Factory\UIFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />

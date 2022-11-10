@@ -1,9 +1,5 @@
-﻿using Assets.Scripts.Metanoia.Logic;
-using System;
-using System.Collections.Generic;
+﻿using Assets.Scripts.Metanoia.Components.Health;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts.Metanoia.Enemy

@@ -1,15 +1,14 @@
 ﻿using Assets.Scripts.Metanoia.Components.Camera;
-using UnityEngine;
 using Assets.Scripts.Metanoia.Components.Curtain;
 using Assets.Scripts.Metanoia.Factory;
 using Assets.Scripts.Metanoia.StaticData;
-using System.Threading.Tasks;
-using UnityEngine.SceneManagement;
-using Assets.Scripts.Metanoia.UI.Services.Factory;
 using Assets.Scripts.Metanoia.Services.PersistentProgress;
-using Assets.Scripts.Metanoia.UI.Elements;
 using Assets.Scripts.Metanoia.Player;
 using Assets.Scripts.Metanoia.Enemy;
+using Assets.Scripts.Metanoia.Components.Health;
+using System.Threading.Tasks;
+using UnityEngine.SceneManagement;
+using UnityEngine;
 
 namespace Assets.Scripts.Metanoia.StateMachine
 {
@@ -94,7 +93,7 @@ namespace Assets.Scripts.Metanoia.StateMachine
         private async Task InitHud(GameObject hero)
         {
             GameObject hud = await _gameFactory.CreateHud();
-            hud.GetComponentInChildren<ActorUI>().Construct(hero.GetComponent<PlayerHealth>());
+            hud.GetComponentInChildren<HpBar>().Construct(hero.GetComponent<PlayerHealth>());
         }
 
         private void CameraFollow(GameObject hero) =>

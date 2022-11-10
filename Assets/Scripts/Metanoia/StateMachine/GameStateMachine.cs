@@ -4,7 +4,6 @@ using Assets.Scripts.Metanoia.Services;
 using Assets.Scripts.Metanoia.Services.PersistentProgress;
 using Assets.Scripts.Metanoia.Services.SaveLoad;
 using Assets.Scripts.Metanoia.StaticData;
-using Assets.Scripts.Metanoia.UI.Services.Factory;
 using System;
 using System.Collections.Generic;
 
