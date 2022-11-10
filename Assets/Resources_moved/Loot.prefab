@@ -127,15 +127,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -234,7 +234,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 88157e674d7d0314db76940c73b69405, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -278,8 +278,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6753059635527676392}
-  - component: {fileID: 6967456050214925587}
   - component: {fileID: 2978911330294108892}
+  - component: {fileID: 6967456050214925587}
   - component: {fileID: -6690655266750477825}
   m_Layer: 15
   m_Name: Loot
@@ -305,23 +305,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6967456050214925587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8526864766129541932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2d1d1a9a01be1449dd494a41f88e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Skull: {fileID: 8508916824788910457}
-  PickUpFXPrefab: {fileID: 0}
-  PickUpPopup: {fileID: 0}
-  LootText: {fileID: 8963714049265433792}
-  Id: {fileID: -6690655266750477825}
 --- !u!65 &2978911330294108892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -335,6 +318,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6967456050214925587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526864766129541932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8786ee934aeba464b939114141986284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Skull: {fileID: 8508916824788910457}
+  PickUpFXPrefab: {fileID: 0}
+  PickUpPopup: {fileID: 653783976755767053}
+  LootText: {fileID: 8963714049265433792}
+  Id: {fileID: -6690655266750477825}
 --- !u!114 &-6690655266750477825
 MonoBehaviour:
   m_ObjectHideFlags: 0

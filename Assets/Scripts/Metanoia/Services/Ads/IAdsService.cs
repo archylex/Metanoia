@@ -8,7 +8,6 @@ namespace Assets.Scripts.Metanoia.Services.Ads
         int Reward { get; }
         void Initialize();
         void ShowRewardedVideo(Action onVideoFinished);
-
         bool IsRewardedVideoReady();
     }
 }

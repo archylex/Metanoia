@@ -6,5 +6,8 @@
         Idle,
         Attack,
         Walking,
+        Running,
+        Pushing,
+        Pulling,
         Died,
     }}

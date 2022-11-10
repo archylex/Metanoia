@@ -1,11 +1,11 @@
-﻿using Assets.Scripts.Metanoia.AssetManagement;
+﻿using Assets.Scripts.Metanoia.Services.AssetManagement;
 using Assets.Scripts.Metanoia.Services.PersistentProgress;
-using Assets.Scripts.Metanoia.StaticData;
 using Assets.Scripts.Metanoia.Services.Ads;
 using Assets.Scripts.Metanoia.Services.IAP;
-using Assets.Scripts.Metanoia.StaticData.Windows;
-using Assets.Scripts.Metanoia.UI.Windows.Shop;
-using Assets.Scripts.Metanoia.UI.Services.Windows;
+using Assets.Scripts.Metanoia.Services.StaticData;
+using Assets.Scripts.Metanoia.Data;
+using Assets.Scripts.Metanoia.Components.Shop;
+using Assets.Scripts.Metanoia.Services.Windows;
 using System.Threading.Tasks;
 using UnityEngine;
 

@@ -1,5 +1,5 @@
 using Assets.Scripts.Metanoia.Components.Curtain;
-using Assets.Scripts.Metanoia.StateMachine;
+using Assets.Scripts.Metanoia.Service.StateMachine;
 using UnityEngine;
 
 namespace Assets.Scripts.Metanoia

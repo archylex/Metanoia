@@ -55,7 +55,7 @@ namespace Assets.Scripts.Metanoia.Services.Ads
 
         public void OnInitializationFailed(UnityAdsInitializationError error, string message)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void ShowRewardedVideo(Action onVideoFinished)
@@ -74,22 +74,22 @@ namespace Assets.Scripts.Metanoia.Services.Ads
 
         public void OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void OnUnityAdsShowStart(string placementId)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void OnUnityAdsShowClick(string placementId)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void OnUnityAdsShowComplete(string placementId, UnityAdsShowCompletionState showCompletionState)
@@ -97,9 +97,7 @@ namespace Assets.Scripts.Metanoia.Services.Ads
             if (_gameId.Equals(placementId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
             {
                 Debug.Log("Unity Ads Rewarded Ad Completed");
-                // Grant a reward.
-
-                // Load another ad:
+                
                 Advertisement.Load(_gameId, this);
                 
                 _isReady = false;

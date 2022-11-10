@@ -1,6 +1,3 @@
-using UnityEditor.Animations;
-
-
 namespace Assets.Scripts.Metanoia.Animation
 {
     public interface IAnimationStateReader

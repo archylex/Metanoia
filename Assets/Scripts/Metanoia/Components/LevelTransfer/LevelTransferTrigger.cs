@@ -1,5 +1,5 @@
 ﻿using Assets.Scripts.Metanoia.Services;
-using Assets.Scripts.Metanoia.StateMachine;
+using Assets.Scripts.Metanoia.Service.StateMachine;
 using System.Linq;
 using UnityEngine;
 
@@ -8,10 +8,11 @@ namespace Assets.Scripts.Metanoia.Components.LevelTransfer
     public class LevelTransferTrigger : MonoBehaviour
     {
         public string TransferTo;
+        public string PlayerTag = "Player";
 
-        private const string PlayerTag = "Player";
         private IGameStateMachine _stateMachine;
         private bool _triggered;
+
         private void Awake() =>
             _stateMachine = GameServices.Container.Single<IGameStateMachine>();
 

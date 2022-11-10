@@ -1,15 +1,13 @@
 ﻿using Assets.Scripts.Metanoia.Data;
-using Assets.Scripts.Metanoia.Enemy;
 using Assets.Scripts.Metanoia.Factory;
 using Assets.Scripts.Metanoia.Services.PersistentProgress;
-using Assets.Scripts.Metanoia.StaticData;
 using UnityEngine;
 
 namespace Assets.Scripts.Metanoia.Components.Enemy
 {
     public class SpawnPoint : MonoBehaviour, ISavedProgress
     {
-        public MonsterTypeId monsterType;
+        public EnemyTypeId enemyType;
         public string Id { get; set; }
 
         public bool slain;
@@ -30,8 +28,8 @@ namespace Assets.Scripts.Metanoia.Components.Enemy
 
         private async void Spawn()
         {
-            GameObject monster = await _gameFactory.CreateMonster(monsterType, transform);
-            _enemyDeath = monster.GetComponent<EnemyDeath>();
+            GameObject enemy = await _gameFactory.CreateMonster(enemyType, transform);
+            _enemyDeath = enemy.GetComponent<EnemyDeath>();
             _enemyDeath.Happened += Slay;
         }
 

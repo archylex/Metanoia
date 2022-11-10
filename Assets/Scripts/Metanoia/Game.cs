@@ -1,6 +1,6 @@
 ﻿using Assets.Scripts.Metanoia.Components.Curtain;
 using Assets.Scripts.Metanoia.Services;
-using Assets.Scripts.Metanoia.StateMachine;
+using Assets.Scripts.Metanoia.Service.StateMachine;
 using Unity.VisualScripting;
 
 namespace Assets.Scripts.Metanoia

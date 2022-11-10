@@ -4,10 +4,17 @@ namespace Assets.Scripts.Metanoia.Components.Camera
 {
     public class CameraFollow : MonoBehaviour
     {
-        [SerializeField] private float _rotationAngleX = 55.0f;
-        [SerializeField] private float _distance = 10.0f;
-        [SerializeField] private float _offsetY = 0.5f;
-        [SerializeField] private Transform _following = null;
+        [SerializeField] 
+        private float _rotationAngleX = 55.0f;
+
+        [SerializeField] 
+        private float _distance = 10.0f;
+
+        [SerializeField] 
+        private float _offsetY = 0.5f;
+
+        [SerializeField] 
+        private Transform _following = null;
 
         private void LateUpdate()
         {

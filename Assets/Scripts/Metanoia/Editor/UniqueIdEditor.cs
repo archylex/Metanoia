@@ -1,4 +1,4 @@
-using Assets.Scripts.Metanoia.Logic;
+using Assets.Scripts.Metanoia.Components.Unique;
 using System;
 using System.Linq;
 using UnityEditor;

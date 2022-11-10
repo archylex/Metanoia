@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26248e738025cb44ca7e57e3c0809c81, type: 3}
   m_Name: BlueSlime
   m_EditorClassIdentifier: 
-  MonsterTypeId: 2
+  EnemyTypeId: 2
   Hp: 100
   Damage: 15
   Speed: 2

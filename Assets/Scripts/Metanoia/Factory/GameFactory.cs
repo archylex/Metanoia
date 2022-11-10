@@ -1,16 +1,15 @@
-﻿using Assets.Scripts.Metanoia.AssetManagement;
+﻿using Assets.Scripts.Metanoia.Services.AssetManagement;
+using Assets.Scripts.Metanoia.Services.Random;
+using Assets.Scripts.Metanoia.Services.PersistentProgress;
+using Assets.Scripts.Metanoia.Services.Windows;
+using Assets.Scripts.Metanoia.Components.Window;
+using Assets.Scripts.Metanoia.Components.Health;
+using Assets.Scripts.Metanoia.Components.Enemy;
+using Assets.Scripts.Metanoia.Services.StaticData;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine.AI;
 using UnityEngine;
-using Assets.Scripts.Metanoia.StaticData;
-using Assets.Scripts.Metanoia.Services.Random;
-using Assets.Scripts.Metanoia.Services.PersistentProgress;
-using Assets.Scripts.Metanoia.UI.Services.Windows;
-using Assets.Scripts.Metanoia.UI.Elements;
-using Assets.Scripts.Metanoia.Components.Health;
-using Assets.Scripts.Metanoia.Enemy;
-using Assets.Scripts.Metanoia.Components.Enemy;
 using Object = UnityEngine.Object;
 
 namespace Assets.Scripts.Metanoia.Factory
@@ -61,9 +60,9 @@ namespace Assets.Scripts.Metanoia.Factory
             return hud;
         }
 
-        public async Task<GameObject> CreateMonster(MonsterTypeId typeId, Transform parent)
+        public async Task<GameObject> CreateMonster(EnemyTypeId typeId, Transform parent)
         {
-            MonsterStaticData monsterData = _staticData.ForMonster(typeId);
+            EnemyStaticData monsterData = _staticData.ForMonster(typeId);
 
             GameObject prefab = await _asset.Load<GameObject>(monsterData.PrefabReference);
             GameObject monster = Object.Instantiate(prefab, parent.position, Quaternion.identity, parent);
@@ -99,13 +98,13 @@ namespace Assets.Scripts.Metanoia.Factory
             return lootPiece;
         }
 
-        public async Task CreateSpawner(Vector3 at, string spawnerId, MonsterTypeId monsterTypeId)
+        public async Task CreateSpawner(Vector3 at, string spawnerId, EnemyTypeId monsterTypeId)
         {
             GameObject prefab = await _asset.Load<GameObject>(AssetAddress.Spawner);
             SpawnPoint spawner = InstantiateRegistered(prefab, at).GetComponent<SpawnPoint>();
             spawner.Construct(this);
             spawner.Id = spawnerId;
-            spawner.monsterType = monsterTypeId;
+            spawner.enemyType = monsterTypeId;
         }
 
         public void CleanUp()

@@ -1,10 +1,11 @@
-﻿using UnityEditor;
+﻿using Assets.Scripts.Metanoia.Data;
+using Assets.Scripts.Metanoia.Services.StaticData;
+using Assets.Scripts.Metanoia.Components.Enemy;
+using Assets.Scripts.Metanoia.Components.Unique;
+using System.Linq;
+using UnityEditor;
 using UnityEngine.SceneManagement;
 using UnityEngine;
-using Assets.Scripts.Metanoia.StaticData;
-using Assets.Scripts.Metanoia.Components.Enemy;
-using System.Linq;
-using Assets.Scripts.Metanoia.Logic;
 
 namespace Assets.Scripts.Metanoia.Editor
 {
