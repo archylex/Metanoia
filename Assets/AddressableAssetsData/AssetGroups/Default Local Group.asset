@@ -57,6 +57,10 @@ MonoBehaviour:
     m_Address: iap_icon_3
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 5187e10b40fa44a418c3944c4c21d664
+    m_Address: InventoryItem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 513805bdaaa9db04dbfac01e92125ec1, type: 2}
   m_SchemaSet:

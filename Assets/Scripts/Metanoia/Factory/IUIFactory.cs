@@ -6,6 +6,7 @@ namespace Assets.Scripts.Metanoia.Factory
     public interface IUIFactory : IService
     {
         void CreateShop();
+        void CreateInventory();
         Task CreateUIRoot();
     }
 }

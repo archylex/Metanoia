@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts.Metanoia.Components.Enemy;
-using Assets.Scripts.Metanoia.Services;
 using Assets.Scripts.Metanoia.Data;
 using Assets.Scripts.Metanoia.Services.Windows;
 

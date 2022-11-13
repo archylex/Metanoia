@@ -20,6 +20,9 @@ namespace Assets.Scripts.Metanoia.Services.Windows
                 case WindowId.Shop:
                     _uiFactory.CreateShop();
                     break;
+                case WindowId.Inventory:
+                    _uiFactory.CreateInventory();
+                    break;
             }
         }
     }

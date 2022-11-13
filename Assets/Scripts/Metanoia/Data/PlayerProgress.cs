@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.Metanoia.Inventory;
+using System;
 
 namespace Assets.Scripts.Metanoia.Data
 {
@@ -10,6 +11,7 @@ namespace Assets.Scripts.Metanoia.Data
         public Stats HeroStats;
         public KillData KillData;
         public PurchaseData PurchaseData;
+        public InventoryObject Inventory;
 
         public PlayerProgress(string initialLevel)
         {
@@ -18,6 +20,7 @@ namespace Assets.Scripts.Metanoia.Data
             HeroStats = new Stats();
             KillData = new KillData();
             PurchaseData = new PurchaseData();
+            Inventory = new InventoryObject();
         }
     }
 }

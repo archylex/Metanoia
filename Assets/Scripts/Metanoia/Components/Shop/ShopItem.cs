@@ -34,8 +34,8 @@ namespace Assets.Scripts.Metanoia.Components.Shop
             BuyItemButton.onClick.AddListener(OnBuyItemClick);
 
             PriceText.text = _productDescription.Config.Price;
-            QuantityText.text = _productDescription.Config.Quantity.ToString();
-            AvailableItemsLeftText.text = _productDescription.AvailablePurchasesLeft.ToString();
+            //QuantityText.text = _productDescription.Config.Quantity.ToString();
+            //AvailableItemsLeftText.text = _productDescription.AvailablePurchasesLeft.ToString();
             Icon.sprite = await _asset.Load<Sprite>(_productDescription.Config.Icon);
         }
 

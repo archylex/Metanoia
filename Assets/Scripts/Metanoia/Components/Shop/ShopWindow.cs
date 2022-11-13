@@ -46,7 +46,9 @@ namespace Assets.Scripts.Metanoia.Components.Shop
             Progress.WorldData.LootData.Changed -= RefreshSkullText;
         }
 
-        private void RefreshSkullText() =>
-            SkullText.text = Progress.WorldData.LootData.Collected.ToString();
+        private void RefreshSkullText()
+        {
+            //SkullText.text = Progress.WorldData.LootData.Collected.ToString();
+        }
     }
 }

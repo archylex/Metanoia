@@ -8,6 +8,7 @@ using Assets.Scripts.Metanoia.Components.Shop;
 using Assets.Scripts.Metanoia.Services.Windows;
 using System.Threading.Tasks;
 using UnityEngine;
+using Assets.Scripts.Metanoia.Components.Inventory;
 
 namespace Assets.Scripts.Metanoia.Factory
 {
@@ -44,10 +45,19 @@ namespace Assets.Scripts.Metanoia.Factory
             window.Construct(_adService, _progressService, _iapService, _asset);
         }
 
+        public void CreateInventory()
+        {
+            WindowConfig config = _staticData.ForWindow(WindowId.Inventory);
+            InventoryWindow window = Object.Instantiate(config.Prefab, _uiRoot) as InventoryWindow;
+            window.Construct(_progressService, _asset);
+        }
+
         public async Task CreateUIRoot()
         {
-            GameObject root = await _asset.Instantiate(UIRootPath);
+            GameObject root = await _asset.Instantiate(UIRootPath);            
             _uiRoot = root.transform;
+            _uiRoot.GetComponent<Canvas>().sortingOrder = 1;
+            
         }
     }
 }
